@@ -1,5 +1,5 @@
-import {Home} from "../pages/home/home";
-import {Login} from "../pages/login/login";
+import {Home} from "../../pages/home/home";
+import {Login} from "../../pages/login/login";
 import {Route} from "react-router-dom";
 import React from "react";
 

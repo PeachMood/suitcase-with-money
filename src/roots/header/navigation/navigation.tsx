@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./navigation.module.css"
-import {Page} from "../../../utils/pages"
+import {Page} from "../../route/pages"
 import {Link} from "react-router-dom";
 
 interface Props {
