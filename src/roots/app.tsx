@@ -1,7 +1,7 @@
 import React from 'react'
 import {Route, Routes} from "react-router-dom"
 import {homeRoutes, otherRoutes} from "../utils/pages";
-import {Layout} from "./header/layout/layout";
+import {Layout} from "./layout/layout";
 
 export const App = () => {
     return <Routes>

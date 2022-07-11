@@ -7,7 +7,6 @@ import headerStyles from "./header.module.css"
 import buttonStyles from "../../styles/ui/button.module.css"
 import commonStyles from "../../styles/common.module.css"
 
-
 export const Header = () => {
     const navigate = useNavigate();
 
