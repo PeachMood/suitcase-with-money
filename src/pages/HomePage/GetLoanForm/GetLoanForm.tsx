@@ -1,10 +1,10 @@
 import React, {useState} from "react"
 
-import formStyles from "./form.module.css"
-import buttonStyles from "../../../styles/ui/button.module.css"
-import sliderStyles from "../../../styles/ui/slider.module.css"
+import formStyles from "./GetLoanForm.css"
+import buttonStyles from "../../../components/Button/Button.module.css"
+import sliderStyles from "../../../components/Slider/Slider.module.css"
 
-export const Form = () => {
+export const GetLoanForm = () => {
     const [amount, setAmount] = useState("1000");
     const [terms, setTerms] = useState("30");
 

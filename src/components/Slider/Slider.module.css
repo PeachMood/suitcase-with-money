@@ -1,4 +1,4 @@
-input[type="range"].slider {
+input[type="range"].defaultSlider {
     -webkit-appearance: none;
     appearance: none;
     background: transparent;
@@ -8,14 +8,14 @@ input[type="range"].slider {
 
 /***** Track Styles *****/
 /***** Chrome, Safari, Opera, and Edge Chromium *****/
-input[type="range"].slider::-webkit-slider-runnable-track {
+input[type="range"].defaultSlider::-webkit-slider-runnable-track {
     background: #8299C2;
     height: 8px;
     border-radius: 5px;
 }
 
 /******** Firefox ********/
-input[type="range"].slider::-moz-range-track {
+input[type="range"].defaultSlider::-moz-range-track {
     background: #8299C2;
     height: 8px;
     border-radius: 5px ;
@@ -23,7 +23,7 @@ input[type="range"].slider::-moz-range-track {
 
 /***** Thumb Styles *****/
 /***** Chrome, Safari, Opera, and Edge Chromium *****/
-input[type="range"].slider::-webkit-slider-thumb {
+input[type="range"].defaultSlider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
     background-color: #132651;
@@ -35,7 +35,7 @@ input[type="range"].slider::-webkit-slider-thumb {
 
 /***** Thumb Styles *****/
 /***** Firefox *****/
-input[type="range"].slider::-moz-range-thumb {
+input[type="range"].defaultSlider::-moz-range-thumb {
     border: none; /*Removes extra border that FF applies*/
     border-radius: 0; /*Removes default border-radius that FF applies*/
     background-color: #132651;

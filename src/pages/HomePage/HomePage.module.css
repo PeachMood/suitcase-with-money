@@ -1,6 +1,6 @@
 .page {
     height: calc(100% - 90px);
-    background-image: url("../../images/home-page.jpg");
+    background-image: url("../../assets/images/home-page.jpg");
     background-position: bottom center;
     background-size: cover;
     display: flex;

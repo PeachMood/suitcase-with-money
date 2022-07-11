@@ -1,16 +1,26 @@
-.common * {
+html, body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+#root {
+    height: 100%;
+}
+
+* {
     font-family: "Montserrat", sans-serif;
 }
 
-.common h1 {
+h1 {
     font-size: 60px;
 }
 
-.common h2 {
+h2 {
     font-size: 40px;
 }
 
-.common h3 {
+h3 {
     font-size: 27px;
     font-weight: normal;
 }
