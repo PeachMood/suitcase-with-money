@@ -1,4 +1,4 @@
-.form {
+.loanForm {
     width: 400px;
     min-height: 620px;
     background: rgba(255, 255, 255, 0.85);
@@ -9,19 +9,20 @@
     justify-content: space-around;
     color: #132651;
 }
-.form * {
+
+.loanForm * {
     margin: 0;
 }
 
-.form h2 {
+.loanForm h2 {
     text-align: center;
 }
 
-.form button {
+.loanForm button {
     font-size: 27px;
 }
 
-.field {
+.text {
     display: flex;
     justify-content: space-between;
 }

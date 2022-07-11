@@ -6,7 +6,7 @@ import { homePages } from "../../../App";
 export const Navigation = () => {
     return (
         <ul id="navigation" className={styles.navigation}>
-            {homePages.map(page =>
+            {homePages.slice(2).map(page =>
                 <li key={page.title}>
                     <Link to={page.path}>{page.title}</Link>
                 </li>
