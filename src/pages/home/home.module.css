@@ -1,0 +1,19 @@
+.page {
+    height: calc(100% - 90px);
+    background-image: url("../../images/home-page.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text {
+    color: white;
+    filter: drop-shadow(1px 2px 2px #132651);
+    width: 450px;
+}
+
+.text * {
+    vertical-align: center;
+}

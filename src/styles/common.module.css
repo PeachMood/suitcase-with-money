@@ -1,0 +1,17 @@
+.common * {
+    font-family: "Montserrat", sans-serif;
+}
+
+.common h1 {
+    font-size: 60px;
+}
+
+.common h2 {
+    font-size: 40px;
+}
+
+.common h3 {
+    font-size: 27px;
+    font-weight: normal;
+}
+
