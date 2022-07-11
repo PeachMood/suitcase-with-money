@@ -1,0 +1,44 @@
+input[type="range"].defaultSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+}
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"].defaultSlider::-webkit-slider-runnable-track {
+    background: #8299C2;
+    height: 8px;
+    border-radius: 5px;
+}
+
+/******** Firefox ********/
+input[type="range"].defaultSlider::-moz-range-track {
+    background: #8299C2;
+    height: 8px;
+    border-radius: 5px ;
+}
+
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"].defaultSlider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    background-color: #132651;
+    height: 21px;
+    width: 21px;
+    border-radius: 50px;
+    margin-top: -6.5px;
+}
+
+/***** Thumb Styles *****/
+/***** Firefox *****/
+input[type="range"].defaultSlider::-moz-range-thumb {
+    border: none; /*Removes extra border that FF applies*/
+    border-radius: 0; /*Removes default border-radius that FF applies*/
+    background-color: #132651;
+    height: 2rem;
+    width: 1rem;
+}

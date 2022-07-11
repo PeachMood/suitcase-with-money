@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Route, Routes } from "react-router-dom"
+import { Layout } from "./roots/Layout/Layout";
+import { HomePage } from "./pages/HomePage/HomePage";
+import { LoginPage } from "./pages/LoginPage/LoginPage";
+import { Page, PagesRoute } from "./roots/RoutePages/PagesRoute";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const homePages: Page[] = [
+    {title: "Домашняя страница", path: "/", element: <HomePage/>},
+    {title: "Домашняя страница", path: "/HomePage", element: <HomePage/>},
+    {title: "Как получить", path: "/get_loan", element: <div/>},
+    {title: "Как погасить", path: "/repay_loan", element: <div/>},
+    {title: "Документы", path: "/documents", element: <div/>},
+    {title: "Связь", path: "/contact", element: <div/>}
+];
+
+const otherPages: Page[] = [
+    {title: "Авторизация", path: "/LoginPage", element: <LoginPage/>}
+];
+
+export const App = () => {
+    return <Routes>
+        <Route element={<Layout/>}>
+            <PagesRoute pages={homePages}/>
+        </Route>
+        <PagesRoute pages={otherPages}/>
+    </Routes>;
 }
-
-export default App;
