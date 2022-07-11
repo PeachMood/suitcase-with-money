@@ -5,7 +5,7 @@ import { HomePage } from "./pages/HomePage/HomePage";
 import { LoginPage } from "./pages/LoginPage/LoginPage";
 import { Page, PagesRoute } from "./roots/RoutePages/PagesRoute";
 
-const homePages: Page[] = [
+export const homePages: Page[] = [
     {title: "Домашняя страница", path: "/", element: <HomePage/>},
     {title: "Домашняя страница", path: "/HomePage", element: <HomePage/>},
     {title: "Как получить", path: "/get_loan", element: <div/>},
@@ -14,7 +14,7 @@ const homePages: Page[] = [
     {title: "Связь", path: "/contact", element: <div/>}
 ];
 
-const otherPages: Page[] = [
+export const otherPages: Page[] = [
     {title: "Авторизация", path: "/LoginPage", element: <LoginPage/>}
 ];
 
