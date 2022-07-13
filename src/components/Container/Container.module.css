@@ -1,0 +1,11 @@
+.container {
+    padding: 40px 40px;
+}
+
+.container * {
+    margin: 0;
+}
+
+.container > h2, a {
+    align-self: center;
+}

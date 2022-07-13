@@ -8,8 +8,12 @@ html, body {
     height: 100%;
 }
 
+#root > div {
+    height: 100%;
+}
+
 * {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", system-ui  !important;
 }
 
 h1 {

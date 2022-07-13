@@ -1,28 +1,9 @@
 .loanForm {
-    width: 400px;
-    min-height: 620px;
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 25px;
-    padding: 0 45px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    background: rgb(255, 255, 255, 0.8);
     color: #132651;
-}
-
-.loanForm * {
-    margin: 0;
-}
-
-.loanForm h2 {
-    text-align: center;
+    border-radius: 5px;
 }
 
 .loanForm button {
     font-size: 27px;
-}
-
-.text {
-    display: flex;
-    justify-content: space-between;
 }

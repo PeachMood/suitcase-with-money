@@ -1,0 +1,28 @@
+.textField label {
+    color: #8299C2;
+}
+
+.textField input:valid:focus label {
+    color: #132651
+}
+
+.textField input {
+    color: #132651;
+}
+
+.textField fieldset {
+    border-color: #8299C2;
+    border-radius: 5px;
+}
+
+.textField input:valid:focus + fieldset {
+    border-color: #132651;
+    color: #132651;
+}
+
+.textField label {
+    border-color: #132651;
+    color: #132651 !important;
+}
+
+
