@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom"
 import { Layout } from "./roots/Layout/Layout";
 import { HomePage } from "./pages/HomePage/HomePage";
 import { LoginPage } from "./pages/LoginPage/LoginPage";
+import { RegisterPage } from "./pages/RegisterPage/RegisterPage";
 
 export interface Page {
     title: string;
@@ -20,7 +21,8 @@ export const homePages: Page[] = [
 ];
 
 export const otherPages: Page[] = [
-    {title: "Авторизация", path: "/login", element: <LoginPage/>}
+    {title: "Авторизация", path: "/login", element: <LoginPage/>},
+    {title: "Регистрация", path: "/register", element: <RegisterPage/>}
 ];
 
 export const App = () => {

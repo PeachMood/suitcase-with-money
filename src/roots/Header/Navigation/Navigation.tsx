@@ -1,14 +1,15 @@
 import React from "react";
-import styles from "./Navigation.module.css"
-import { Link } from "react-router-dom";
+import { Link } from "../../../components/Link/Link";
 import { homePages } from "../../../App";
+
+import styles from "./Navigation.module.css";
 
 export const Navigation = () => {
     return (
         <ul id="navigation" className={styles.navigation}>
             {homePages.slice(2).map(page =>
                 <li key={page.title}>
-                    <Link to={page.path}>{page.title}</Link>
+                    <Link text={page.title} path={page.path}/>
                 </li>
             )}
         </ul>
