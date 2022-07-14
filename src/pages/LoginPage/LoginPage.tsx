@@ -42,7 +42,7 @@ export const LoginPage = () => {
     return <div id="login_page" className={styles.loginPage}>
         <form id="authorization_form" className={styles.authorizationForm}>
             <Container spacing={4}>
-                <Logo path="home"/>
+                <Logo path="/home"/>
                 {submitError ?
                     <Alert severity="error" onClose={() => setSubmitError(null)}>{submitError}</Alert> : null}
                 <InputMask mask="+7 (999) 999 - 99 - 99" inputRef={loginRef} {...loginProps}>

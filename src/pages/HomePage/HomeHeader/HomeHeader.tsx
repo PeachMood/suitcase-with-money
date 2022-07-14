@@ -12,9 +12,9 @@ export const HomeHeader = () => {
         navigate("/login", {replace: true});
     }
 
-    return <span id="home_header" className={headerStyles.homeHeader}>
+    return <header id="home_header" className={headerStyles.homeHeader}>
         <Logo path="home"/>
         <Navigation />
         <Button onClick={navigateLogin}>Войти</Button>
-    </span>;
+    </header>;
 }

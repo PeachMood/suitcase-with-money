@@ -6,9 +6,10 @@ import {LoginPage} from "./pages/LoginPage/LoginPage";
 import {RegisterPage} from "./pages/RegisterPage/RegisterPage";
 import {AccountPage} from "./pages/AccountPage/AccountPage";
 import {Context} from "./index";
-import StoreService from "./services/StoreService";
 import {HomeHeader} from "./pages/HomePage/HomeHeader/HomeHeader";
 import {AccountHeader} from "./pages/AccountPage/AccountHeader/AccountHeader";
+import {SideMenu} from "./pages/AccountPage/SideMenu/SideMenu";
+import StoreService from "./services/StoreService";
 
 export interface Page {
     title: string;
@@ -44,8 +45,11 @@ export const App = () => {
     }
 
     return <Routes>
-        {store.checkAuth() ?
-            <Route element={<Layout header={<AccountHeader/>}/>}>
+        {!store.checkAuth() ?
+            <Route element={<Layout header={<>
+                <AccountHeader/>
+                <SideMenu/>
+            </>}/>}>
                 {getRoutes(authPages)}
             </Route> :
             <Route element={<Layout header={<HomeHeader/>}/>}>

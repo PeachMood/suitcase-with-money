@@ -6,7 +6,7 @@ interface BaseError {
 
 export type BaseAxiosError = AxiosError<BaseError>;
 
-const ENDPOINT_PREFIX = "http://localhost:3000/api";
+const ENDPOINT_PREFIX = "http://localhost:8080/api";
 
 export default class ApiService {
     private basicRequestConfig(endpoint: string): AxiosRequestConfig {

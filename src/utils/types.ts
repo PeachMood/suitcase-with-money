@@ -12,6 +12,17 @@ export interface PassportData {
     passportNumber: string;
 }
 
+export interface LoanInformation {
+    id: number;
+    title: string;
+    amountLeft: number;
+    loanAmount: number,
+    rate: number,
+    days: number,
+    startDate: string,
+    expirationDate: string;
+}
+
 export type PersonInformation = {id: number, balance: number} & PassportData
 
 export interface PersonId { idPerson: number }
