@@ -1,5 +1,12 @@
-.logo {
-    background-image: url("/src/assets/images/logo.svg");
+.whiteLogo {
+    background-image: url("/src/assets/images/white-logo.svg");
+    background-repeat: no-repeat;
+    min-width: 248px;
+    min-height: 75px;
+}
+
+.blueLogo {
+    background-image: url("/src/assets/images/blue-logo.svg");
     background-repeat: no-repeat;
     min-width: 248px;
     min-height: 75px;

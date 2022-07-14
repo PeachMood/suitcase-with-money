@@ -1,0 +1,24 @@
+.menu {
+    height: calc(100% - 80px);
+    background-color: #8299C2;
+    width: 432px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a {
+    align-self: flex-start;
+    cursor: pointer;
+    color: white;
+    margin-left: 25px !important;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    color: #132651;
+    transition: 0.7s;
+}
+
