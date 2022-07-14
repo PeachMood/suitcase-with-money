@@ -5,6 +5,7 @@
 }
 
 .link:hover {
+    cursor: pointer;
     color: #132651;
     transition: 0.7s;
 }

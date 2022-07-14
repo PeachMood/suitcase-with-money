@@ -1,4 +1,4 @@
-import axios, {AxiosRequestConfig, AxiosResponse, AxiosError} from "axios";
+import axios, {AxiosRequestConfig, AxiosError} from "axios";
 
 interface BaseError {
     error: string;
@@ -6,20 +6,18 @@ interface BaseError {
 
 export type BaseAxiosError = AxiosError<BaseError>;
 
-const ENDPOINT_PREFIX = "/api";
+const ENDPOINT_PREFIX = "http://localhost:3000/api";
 
-export default class HttpPageApi {
-    constructor(readonly pagePrefix: string) {}
+export default class ApiService {
     private basicRequestConfig(endpoint: string): AxiosRequestConfig {
         return {
-            "url": ENDPOINT_PREFIX + "/" + this.pagePrefix + "/" + endpoint,
+            "url": ENDPOINT_PREFIX + "/" + endpoint,
         };
     }
 
     private async sendRequest<SuccessT>(config: AxiosRequestConfig) {
         const response = await axios(config);
-        const data = response.data;
-        return data;
+        return response.data;
     }
 
     protected sendGetRequest<SuccessT>(endpoint: string, params: any) {

@@ -1,12 +1,9 @@
-.header {
-    margin: 0 112px;
+.accountHeader {
+    background-color: #132651;
+    color: #FFFF;
+    padding: 0 112px;
     height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header * {
-    font-size: 20px;
-    font-weight: normal;
 }
