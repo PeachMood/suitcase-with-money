@@ -5,36 +5,42 @@ import {Logo} from "../../components/Logo/Logo";
 import {Button} from "../../components/Button/Button";
 import {Row} from "../../components/Row/Row";
 import {Link} from "../../components/Link/Link";
-import {ErrorMessage, LoginData} from "../../utils/types";
-import {Context} from "../../index";
+import {ErrorMessage, User} from "../../utils/types";
 import {Alert} from "@mui/material";
 import AuthService from "../../services/AuthorizationService";
 import InputMask from "react-input-mask";
 import Input from "../../components/Input/Input";
+import {Context} from "../../roots/ContextProvider/ContextProvider";
+import AccountService from "../../services/AccountService";
+import {useNavigate} from "react-router-dom";
 
 import styles from "./LoginPage.module.css";
 
 export const LoginPage = () => {
-    const store = useContext(Context);
+    const context = useContext(Context);
+    const navigate =  useNavigate();
     const [submitError, setSubmitError] = useState<ErrorMessage>(null);
-    const {register, formState: {errors}, handleSubmit,} = useForm<LoginData>({
+    const {register, formState: {errors}, handleSubmit,} = useForm<User>({
         defaultValues: {login: "", password: ""},
         mode: "onBlur"
     });
     const {ref: loginRef, ...loginProps} = register("login", {required: "Пожалуйста, укажите номер телефона"});
     const {ref: passwordRef, ...passwordProps} = register("password", {required: "Пожалуйста, укажите номер пароль"});
 
-    const onSubmit = (data: LoginData) => {
+    const onLogin = (idPerson: number) => {
+        const accountService =  new AccountService(idPerson);
+        accountService.getPersonInformation().then(response => {
+            context.person = response;
+            context.isAuthorized = true;
+            navigate("/account");
+        }).then(() => setSubmitError("Неверный логин или пароль"));
+    }
+
+    const onSubmit = (user: User) => {
         const authService = new AuthService();
-        if (store.checkAuth()) {
-            setSubmitError("Вы уже авторизованы");
-            return;
-        }
-        authService.login(data)
+        authService.login(user)
             .then(response => {
-                store.setStoreData(response!.idPerson);
-                store.setAuth(true);
-                setSubmitError(null);
+                onLogin(response!);
             })
             .catch(() => setSubmitError("Неверный логин или пароль"));
     };
@@ -57,7 +63,6 @@ export const LoginPage = () => {
                 </InputMask>
                 <Input
                     label="Пароль"
-                    type="password"
                     autoComplete={"current-password"}
                     error={!!errors.password}
                     helperText={errors.password ? errors.password.message : null}

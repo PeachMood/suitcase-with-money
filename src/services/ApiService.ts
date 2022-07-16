@@ -1,10 +1,4 @@
-import axios, {AxiosRequestConfig, AxiosError} from "axios";
-
-interface BaseError {
-    error: string;
-}
-
-export type BaseAxiosError = AxiosError<BaseError>;
+import axios, {AxiosRequestConfig} from "axios";
 
 const ENDPOINT_PREFIX = "http://localhost:8080/api";
 

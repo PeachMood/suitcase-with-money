@@ -1,5 +1,9 @@
 .loanCard > div {
-    color: #132651;
     background-color: #FFFF;
     border: 2px solid #132651;
 }
+
+.loanCard button {
+    font-size: 20px;
+}
+

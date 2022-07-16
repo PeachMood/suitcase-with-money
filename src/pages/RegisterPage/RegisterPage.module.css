@@ -1,0 +1,41 @@
+.registerPage {
+    background: #132651;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #132651;
+}
+.registerForm a {
+    color: rgb(95, 33, 32);
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.registerForm a:hover {
+    color: rgb(95, 33, 32);
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.registerForm h3 {
+    align-self: center;
+    font-weight: 500;
+}
+
+.registerForm > * {
+    white-space: pre-wrap;
+}
+
+.registerForm {
+    background-color: #FFFF;
+    border-radius: 5px;
+    max-width: 413px;
+}
+
+.registerForm button {
+    font-size: inherit;
+    width: 100%;
+}
+
+

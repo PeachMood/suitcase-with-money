@@ -1,15 +1,15 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {Stack} from "@mui/material";
 
 import styles from "./SideMenu.module.css";
 import {Row} from "../../../components/Row/Row";
+import {Container} from "../../../components/Container/Container";
 
 //TODO webpack.config
 export const SideMenu = (): JSX.Element => {
     return <span id="menu" className={styles.menu}>
-        <Stack spacing={7}>
-            <Stack spacing={4}>
+        <Container>
+            <Container spacing={4}>
                 <h3>Аккаунт</h3>
                 <Row spacing={1}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -30,8 +30,8 @@ export const SideMenu = (): JSX.Element => {
                     </svg>
                     <a>Выйти</a>
                 </Row>
-            </Stack>
-            <Stack spacing={4}>
+            </Container>
+            <Container spacing={4}>
                 <h3>Меню</h3>
                 <Row spacing={1}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -55,7 +55,7 @@ export const SideMenu = (): JSX.Element => {
                     </svg>
                     <Link to="/get_loan">Оформить займ</Link>
                 </Row>
-                <Row spacing={1.2   }>
+                <Row spacing={1}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                          stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                          className="feather feather-credit-card">
@@ -64,7 +64,7 @@ export const SideMenu = (): JSX.Element => {
                     </svg>
                     <Link to="/repay_loan">Погасить займ</Link>
                 </Row>
-            </Stack>
-        </Stack>
+            </Container>
+        </Container>
     </span>
 }

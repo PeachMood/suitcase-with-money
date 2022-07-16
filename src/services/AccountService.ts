@@ -1,8 +1,20 @@
 import ApiService from "./ApiService";
-import {PersonInformation} from "../utils/types";
+import {Loan, Person} from "../utils/types";
 
 export default class AccountService extends ApiService {
-    async getPersonInformation(personId: number): Promise<PersonInformation> {
-        return this.createGetRequest<PersonInformation>("person")({personId: personId});
+    private readonly personId: number;
+
+    constructor(personId: number) {
+        super();
+        this.personId = personId;
+    }
+
+    async getPersonInformation(): Promise<Person> {
+        console.log(this.personId);
+        return this.createGetRequest<Person>(`person/${this.personId}`)();
+    }
+
+    async getPersonLoans(): Promise<Loan[]> {
+        return this.createGetRequest<Loan[]>(`person/${this.personId}/loan`)();
     }
 }

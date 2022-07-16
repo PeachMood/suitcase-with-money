@@ -1,15 +1,13 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import {Route, Routes} from "react-router-dom"
-import {Layout} from "./components/Layout/Layout";
-import {HomePage} from "./pages/HomePage/HomePage";
-import {LoginPage} from "./pages/LoginPage/LoginPage";
-import {RegisterPage} from "./pages/RegisterPage/RegisterPage";
-import {AccountPage} from "./pages/AccountPage/AccountPage";
-import {Context} from "./index";
-import {HomeHeader} from "./pages/HomePage/HomeHeader/HomeHeader";
-import {AccountHeader} from "./pages/AccountPage/AccountHeader/AccountHeader";
-import {SideMenu} from "./pages/AccountPage/SideMenu/SideMenu";
-import StoreService from "./services/StoreService";
+import {Layout} from "./Layout/Layout";
+import {HomePage} from "../pages/HomePage/HomePage";
+import {LoginPage} from "../pages/LoginPage/LoginPage";
+import {RegisterPage} from "../pages/RegisterPage/RegisterPage";
+import {AccountPage} from "../pages/AccountPage/AccountPage";
+import {HomeHeader} from "../pages/HomePage/HomeHeader/HomeHeader";
+import {AccountHeader} from "../pages/AccountPage/AccountHeader/AccountHeader";
+import {SideMenu} from "../pages/AccountPage/SideMenu/SideMenu";
 
 export interface Page {
     title: string;
@@ -39,22 +37,20 @@ export const otherPages: Page[] = [
 ];
 
 export const App = () => {
-    const store = useContext<StoreService>(Context);
     const getRoutes = (pages: Page[]): JSX.Element[] => {
         return pages.map(page => <Route key={page.path} path={page.path} element={page.element}/>);
     }
 
     return <Routes>
-        {!store.checkAuth() ?
-            <Route element={<Layout header={<>
-                <AccountHeader/>
-                <SideMenu/>
-            </>}/>}>
-                {getRoutes(authPages)}
-            </Route> :
-            <Route element={<Layout header={<HomeHeader/>}/>}>
-                {getRoutes(homePages)}
-            </Route>}
+        <Route element={<Layout header={<>
+            <AccountHeader/>
+            <SideMenu/>
+        </>}/>}>
+            {getRoutes(authPages)}
+        </Route>
+        <Route element={<Layout header={<HomeHeader/>}/>}>
+            {getRoutes(homePages)}
+        </Route>
         {getRoutes(otherPages)}
     </Routes>;
 }

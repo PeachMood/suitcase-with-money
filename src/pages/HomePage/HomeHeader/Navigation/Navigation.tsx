@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "../../../../components/Link/Link";
-import { homePages } from "../../../../App";
+import { homePages } from "../../../../roots/App";
 
 import styles from "./Navigation.module.css";
 
