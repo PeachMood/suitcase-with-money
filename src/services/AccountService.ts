@@ -11,7 +11,7 @@ export default class AccountService extends ApiService {
 
     async getPersonInformation(): Promise<Person> {
         console.log(this.personId);
-        return this.createGetRequest<Person>(`person/${this.personId}`)();
+        return this.createGetRequest<Person>(`person/${this.personId}`)(-);
     }
 
     async getPersonLoans(): Promise<Loan[]> {

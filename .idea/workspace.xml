@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bbe60df2-15cd-4590-a0d9-666cff9c00c9" name="Changes" comment="Implemented register page">
+      <change beforePath="$PROJECT_DIR$/src/components/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/AccountService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AccountService.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2ByN32BV1IHJKwR2hkimSGFM83y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/ann/projects/mesto",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/home/ann/projects/suitcase-with-money/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbe60df2-15cd-4590-a0d9-666cff9c00c9" name="Changes" comment="" />
+      <created>1657874161609</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657874161609</updated>
+      <workItem from="1657874162740" duration="8460000" />
+      <workItem from="1657912408218" duration="1848000" />
+      <workItem from="1657948733546" duration="336000" />
+      <workItem from="1658145962939" duration="456000" />
+      <workItem from="1659248607997" duration="36000" />
+      <workItem from="1660902259352" duration="604000" />
+      <workItem from="1662094981117" duration="111000" />
+      <workItem from="1663554853636" duration="25000" />
+      <workItem from="1667546591124" duration="13000" />
+      <workItem from="1668614374588" duration="507000" />
+      <workItem from="1668855604669" duration="72000" />
+      <workItem from="1668956988593" duration="5554000" />
+      <workItem from="1669029741381" duration="3747000" />
+      <workItem from="1669049579578" duration="146000" />
+      <workItem from="1669057773422" duration="3052000" />
+      <workItem from="1669487282322" duration="75000" />
+      <workItem from="1669545016629" duration="271000" />
+      <workItem from="1669552149508" duration="637000" />
+      <workItem from="1669553887499" duration="161000" />
+      <workItem from="1669555255503" duration="51000" />
+      <workItem from="1669557481493" duration="106000" />
+      <workItem from="1669573618060" duration="871000" />
+      <workItem from="1669579677466" duration="1810000" />
+      <workItem from="1669630629181" duration="1097000" />
+      <workItem from="1669791616976" duration="11000" />
+      <workItem from="1669913948918" duration="6000" />
+      <workItem from="1670576999657" duration="63000" />
+      <workItem from="1670665946478" duration="1000" />
+      <workItem from="1671602380789" duration="21000" />
+      <workItem from="1671604312435" duration="261000" />
+      <workItem from="1671889713055" duration="9000" />
+      <workItem from="1671953017042" duration="212000" />
+      <workItem from="1672679360477" duration="6000" />
+    </task>
+    <task id="LOCAL-00001" summary="Implemented register page">
+      <created>1657948857897</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1657948857897</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/utils/types.d.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implemented register page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented register page" />
+  </component>
+</project>
