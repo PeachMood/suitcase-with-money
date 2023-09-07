@@ -1,14 +1,15 @@
+import { FC, ReactNode } from "react";
 import { Outlet } from "react-router-dom"
 
 interface LayoutProps {
-    header: JSX.Element;
+  children: ReactNode;
 }
 
-export const Layout = ({ header }: LayoutProps) => {
-    return (
-        <>
-            { header }
-            <Outlet/>
-        </>
-    );
+export const Layout: FC<LayoutProps> = ({ children }) => {
+  return (
+    <>
+      {children}
+      <Outlet />
+    </>
+  );
 };

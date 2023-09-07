@@ -1,23 +1,36 @@
 .menu {
-    position: fixed;
-    width: 358px;
-    height: calc(100% - 80px);
-    background: #8299C2;
-    color: #FFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  width: 358px;
+  height: calc(100% - 80px);
+  background: #8299C2;
+  color: #FFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu a {
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .menu a:hover {
-    color: #132651;
-    transition: 0.7s;
+  color: #132651;
+  transition: 0.7s;
 }
 
+.menu button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+.menu button:hover {
+  color: #132651;
+  transition: 0.7s;
+}

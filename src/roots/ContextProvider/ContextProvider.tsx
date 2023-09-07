@@ -1,19 +1,24 @@
-import { createContext, ReactNode } from "react";
+import { createContext, ReactNode, useState, FC } from "react";
 import { Person } from "../../utils/types";
 
 interface ContextProps {
-    children: ReactNode;
+  children: ReactNode;
 }
 
-export interface ContextData {
-    isAuthorized: boolean;
-    person: Person;
-}
+interface ContextData {
+  isAuthorized: boolean;
+  setIsAuthorized: (isAuthorized: boolean) => void;
+  person: Person;
+  setPerson: (person: Person) => void;
+};
 
-const defaultValue: ContextData = { person: {}, isAuthorized: false };
+export type ContextType = ContextData | null;
 
-export const Context = createContext<ContextData>(defaultValue);
+export const Context = createContext<ContextType>(null);
 
-export const ContextProvider = ({ children }: ContextProps): JSX.Element => {
-    return <Context.Provider value={ defaultValue }>{ children }</Context.Provider>
+export const ContextProvider: FC<ContextProps> = ({ children }) => {
+  const [isAuthorized, setIsAuthorized] = useState(false);
+  const [person, setPerson] = useState({ id: 1, name: 'Анна' });
+
+  return <Context.Provider value={{ isAuthorized, setIsAuthorized, person, setPerson }}>{children}</Context.Provider>
 }
